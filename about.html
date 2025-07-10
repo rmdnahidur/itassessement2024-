@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nahidur - About</title>
+    <style>
+      :root {
+        --primary: #1b4d3e;
+        --secondary: #e0f2e9;
+        --accent: #a8d5ba;
+        --text-dark: #1a1a1a;
+        --text-light: #ffffff;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--secondary);
+        color: var(--text-dark);
+      }
+      header,
+      nav,
+      footer {
+        background: var(--primary);
+        color: var(--text-light);
+        text-align: center;
+        padding: 1rem;
+      }
+      nav {
+        background: var(--accent);
+      }
+      nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+      }
+      h2 {
+        text-align: center;
+        color: var(--primary);
+      }
+      .bio {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+        line-height: 1.7;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 2rem;
+        background: #ffffff;
+      }
+      th,
+      td {
+        border: 1px solid var(--accent);
+        padding: 1rem;
+        text-align: left;
+      }
+      th {
+        background: var(--accent);
+        color: var(--primary);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Md Nahidur Rahman</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+      <h2>About Me</h2>
+      <div class="bio">
+        <p>
+          Hi, I'm Nahidur – a passionate designer with a love for balanced
+          layouts, green tones, and thoughtful digital experiences. My work
+          blends usability with natural simplicity. I believe great design is
+          silent but impactful.
+        </p>
+      </div>
+      <table>
+        <tr>
+          <th rowspan="2">Skill</th>
+          <th colspan="2">Tools</th>
+          <th rowspan="2">Experience</th>
+        </tr>
+        <tr>
+          <th>Design</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td>UI/UX</td>
+          <td>Figma, Adobe XD</td>
+          <td>HTML, CSS</td>
+          <td>3+ years</td>
+        </tr>
+        <tr>
+          <td>Prototyping</td>
+          <td>Marvel, Framer</td>
+          <td>JS Basics</td>
+          <td>2 years</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      &copy; 2025 Md Nahidur Rahman |
+      <a href="mailto:rmdnahidur25@tbc.edu.np" style="color: var(--accent)"
+        >rmdnahidur25@tbc.edu.np</a
+      >
+    </footer>
+  </body>
+</html>
