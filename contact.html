@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nahidur - Contact</title>
+    <style>
+      :root {
+        --primary: #1b4d3e;
+        --secondary: #e0f2e9;
+        --accent: #a8d5ba;
+        --text-dark: #1a1a1a;
+        --text-light: #ffffff;
+        --error: #e94b3c;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--secondary);
+        color: var(--text-dark);
+      }
+      header,
+      nav,
+      footer {
+        background: var(--primary);
+        color: var(--text-light);
+        text-align: center;
+        padding: 1rem;
+      }
+      nav {
+        background: var(--accent);
+      }
+      nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: var(--primary);
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.6rem;
+        margin-top: 0.3rem;
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        font-size: 1rem;
+        font-family: inherit;
+        resize: vertical;
+      }
+      .error {
+        color: var(--error);
+        font-size: 0.9rem;
+        margin-top: 0.2rem;
+      }
+      button {
+        margin-top: 1.5rem;
+        background-color: var(--primary);
+        color: var(--text-light);
+        border: none;
+        padding: 0.8rem 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      button:hover {
+        background-color: var(--accent);
+        color: var(--primary);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Md Nahidur Rahman</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <div class="error" id="nameError"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <div class="error" id="emailError"></div>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <div class="error" id="messageError"></div>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      &copy; 2025 Md Nahidur Rahman |
+      <a href="mailto:rmdnahidur25@tbc.edu.np" style="color: var(--accent)"
+        >rmdnahidur25@tbc.edu.np</a
+      >
+    </footer>
+
+    <script>
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let valid = true;
+
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
+
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const messageError = document.getElementById("messageError");
+
+        nameError.textContent = "";
+        emailError.textContent = "";
+        messageError.textContent = "";
+
+        if (name.value.trim() === "") {
+          nameError.textContent = "Name is required.";
+          valid = false;
+        }
+        if (!email.value.includes("@") || !email.value.includes(".")) {
+          emailError.textContent = "Enter a valid email.";
+          valid = false;
+        }
+        if (message.value.trim().length < 10) {
+          messageError.textContent = "Message must be at least 10 characters.";
+          valid = false;
+        }
+
+        if (valid) {
+          alert("Thanks for reaching out, I will get back to you soon!");
+          form.reset();
+        }
+      });
+    </script>
+  </body>
+</html>
