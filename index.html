@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nahidur - Welcome</title>
+    <style>
+      :root {
+        --primary: #1b4d3e;
+        --secondary: #e0f2e9;
+        --accent: #a8d5ba;
+        --text-dark: #1a1a1a;
+        --text-light: #ffffff;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: var(--secondary);
+        color: var(--text-dark);
+      }
+      header {
+        background-color: var(--primary);
+        padding: 1.5rem;
+        text-align: center;
+      }
+      header h1 {
+        color: var(--text-light);
+      }
+      nav {
+        background-color: var(--accent);
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0.8rem 0;
+      }
+      nav a {
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .hero {
+        padding: 3rem 1rem;
+        text-align: center;
+        background-color: #ffffff;
+      }
+      .hero h2 {
+        color: var(--primary);
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        max-width: 600px;
+        margin: auto;
+        font-size: 1.1rem;
+      }
+      .slider {
+        margin: 2rem auto;
+        max-width: 960px;
+        overflow: hidden;
+      }
+      .slider img {
+        width: 100%;
+        display: block;
+      }
+      footer {
+        background-color: var(--primary);
+        color: var(--text-light);
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Md Nahidur Rahman</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <section class="hero">
+      <h2>Welcome to Nahidur's World</h2>
+      <p>
+        Discover the green harmony of design and development. Thoughtful,
+        elegant, and user-focused interfaces await you here.
+      </p>
+    </section>
+    <section class="slider">
+      <img src="images/banner1.jpg" alt="Hero Design 1" />
+      <img src="images/banner2.jpg" alt="Hero Design 2" />
+      <img src="images/banner3.jpg" alt="Hero Design 3" />
+    </section>
+    <footer>
+      © 2025 Md Nahidur Rahman |
+      <a href="mailto:rmdnahidur25@tbc.edu.np" style="color: var(--accent)"
+        >rmdnahidur25@tbc.edu.np</a
+      >
+    </footer>
+  </body>
+</html>
