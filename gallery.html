@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nahidur - Gallery</title>
+    <style>
+      :root {
+        --primary: #1b4d3e;
+        --secondary: #e0f2e9;
+        --accent: #a8d5ba;
+        --text-dark: #1a1a1a;
+        --text-light: #ffffff;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--secondary);
+        color: var(--text-dark);
+      }
+      header,
+      nav,
+      footer {
+        background: var(--primary);
+        color: var(--text-light);
+        text-align: center;
+        padding: 1rem;
+      }
+      nav {
+        background: var(--accent);
+      }
+      nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 2rem;
+        color: var(--primary);
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+      .gallery img {
+        width: 100%;
+        border: 4px solid var(--accent);
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+        border-color: var(--primary);
+      }
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Md Nahidur Rahman</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h2>Gallery</h2>
+    <section class="gallery">
+      <a href="images/p1.jpg" target="_blank"
+        ><img src="images/p1.jpg" alt="Project 1"
+      /></a>
+      <a href="images/p2.jpg" target="_blank"
+        ><img src="images/p2.jpg" alt="Project 2"
+      /></a>
+      <a href="images/p3.jpg" target="_blank"
+        ><img src="images/p3.jpg" alt="Project 3"
+      /></a>
+      <a href="images/p4.jpg" target="_blank"
+        ><img src="images/p4.jpg" alt="Project 4"
+      /></a>
+      <a href="images/p5.jpg" target="_blank"
+        ><img src="images/p5.jpg" alt="Project 5"
+      /></a>
+      <a href="images/p6.jpg" target="_blank"
+        ><img src="images/p6.jpg" alt="Project 6"
+      /></a>
+    </section>
+    <footer>
+      &copy; 2025 Md Nahidur Rahman |
+      <a href="mailto:rmdnahidur25@tbc.edu.np">rmdnahidur25@tbc.edu.np</a>
+    </footer>
+  </body>
+</html>
